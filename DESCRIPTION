@@ -1,0 +1,29 @@
+Package: RcppnumDeriv
+Version: 0.0.0-9000
+Title: Accurate and Fast Numerical Derivatives
+Description: Decribe what the package does.
+  Maybe use several lines of text, but not too much.
+Authors@R: c(
+  person(given = "Alessandro", 
+         family = "Gasparini", 
+         role = c("aut", "cre"), 
+         email = "alessandro.gasparini@ki.se",
+         comment = c(ORCID = "0000-0002-8319-7624"))
+  )
+License: GPL (>= 3)
+Imports:
+  Rcpp (>= 1.0.3)
+Suggests:
+  knitr
+LinkingTo:
+  Rcpp,
+  RcppArmadillo
+URL: https://github.com/ellessenne/RcppnumDeriv
+BugReports: https://github.com/ellessenne/RcppnumDeriv/issues
+VignetteBuilder: knitr
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.0.2
+LazyData: true
+ByteCompile: true
+Encoding: UTF-8
+Language: en-GB

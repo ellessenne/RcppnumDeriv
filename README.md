@@ -1,2 +1,3 @@
 # RcppnumDeriv
-Rewriting numDeriv using Rcpp
+
+Rewriting the `numDeriv` package using C++.
