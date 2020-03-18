@@ -9,7 +9,7 @@ r:
 os:
   - linux
   - osx
-matrix:
+jobs:
   exclude:
     - r: devel
       os: osx
