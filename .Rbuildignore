@@ -5,3 +5,5 @@
 ^codecov\.yml$
 ^appveyor\.yml$
 ^testing\.R$
+^doc$
+^Meta$

@@ -17,6 +17,7 @@ Suggests:
   covr,
   knitr,
   numDeriv,
+  rmarkdown,
   testthat (>= 2.1.0)
 LinkingTo:
   Rcpp,
