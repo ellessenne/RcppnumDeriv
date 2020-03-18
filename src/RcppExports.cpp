@@ -6,19 +6,27 @@
 
 using namespace Rcpp;
 
-// rcpp_hello_world
-List rcpp_hello_world();
-RcppExport SEXP _RcppnumDeriv_rcpp_hello_world() {
+// genD_cpp
+Rcpp::List genD_cpp(arma::vec const& h0, Rcpp::Function const& func, arma::vec const& x, double const& d, double const& r, double const& v, double const& eps, double const& zero_tol);
+RcppExport SEXP _RcppnumDeriv_genD_cpp(SEXP h0SEXP, SEXP funcSEXP, SEXP xSEXP, SEXP dSEXP, SEXP rSEXP, SEXP vSEXP, SEXP epsSEXP, SEXP zero_tolSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
-    rcpp_result_gen = Rcpp::wrap(rcpp_hello_world());
+    Rcpp::traits::input_parameter< arma::vec const& >::type h0(h0SEXP);
+    Rcpp::traits::input_parameter< Rcpp::Function const& >::type func(funcSEXP);
+    Rcpp::traits::input_parameter< arma::vec const& >::type x(xSEXP);
+    Rcpp::traits::input_parameter< double const& >::type d(dSEXP);
+    Rcpp::traits::input_parameter< double const& >::type r(rSEXP);
+    Rcpp::traits::input_parameter< double const& >::type v(vSEXP);
+    Rcpp::traits::input_parameter< double const& >::type eps(epsSEXP);
+    Rcpp::traits::input_parameter< double const& >::type zero_tol(zero_tolSEXP);
+    rcpp_result_gen = Rcpp::wrap(genD_cpp(h0, func, x, d, r, v, eps, zero_tol));
     return rcpp_result_gen;
 END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_RcppnumDeriv_rcpp_hello_world", (DL_FUNC) &_RcppnumDeriv_rcpp_hello_world, 0},
+    {"_RcppnumDeriv_genD_cpp", (DL_FUNC) &_RcppnumDeriv_genD_cpp, 8},
     {NULL, NULL, 0}
 };
 
